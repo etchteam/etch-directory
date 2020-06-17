@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Etch directory</title>
+    <meta name="description" content="The internet is full of companies called “Etch” so we made this handy list.">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#ff0000">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+      @font-face {
+        font-family: 'NunitoSans';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('NunitoSans'), local('NunitoSans-Regular'),
+            url('/fonts/nunitosans-regular.woff2') format('woff2'),
+            url('/fonts/nunitosans-regular.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'NunitoSans';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local('NunitoSans Bold'), local('NunitoSans-Bold'),
+            url('/fonts/nunitosans-bold.woff2') format('woff2'),
+            url('/fonts/nunitosans-bold.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'NunitoSans';
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: local('NunitoSans Black'), local('NunitoSans-Black'),
+            url('/fonts/nunitosans-black.woff2') format('woff2'),
+            url('/fonts/nunitosans-black.woff') format('woff');
+      }
+
+      body {
+        -webkit-font-smoothing: antialiased;
+        font-size: 16px;
+        text-align: center;
+        font-family: NunitoSans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      @media (min-width: 38.4em) {
+        body {
+          font-size: 18px;
+        }
+      }
+
+      a {
+        color: inherit;
+      }
+
+      h1, h2 {
+        margin: 0;
+      }
+
+      h1 {
+        font-weight: 900;
+        font-size: 2em;
+      }
+
+      h2 {
+        font-weight: normal;
+        font-size: 1.5em;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      section {
+        margin-bottom: 2em;
+      }
+
+      .header {
+        display: flex;
+        padding: 1em .75em;
+      }
+
+      .header__logo a {
+        font-weight: 900;
+        text-decoration: none;
+      }
+
+      .header__nav {
+        margin-left: auto;
+      }
+
+      .wrap {
+        padding: 0 .75em;
+        max-width: 750px;
+        margin: 2em auto;
+      }
+
+      .highlight {
+        border-bottom: 10px solid rgb(242, 201, 76, .75);
+      }
+
+      .intro__content {
+        color: #4F4F4F;
+      }
+
+      .card {
+        background: #FFF;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+        border: 1px solid #E0E0E0;
+        border-radius: 4px;
+        display: flex;
+        margin-bottom: 1em;
+        text-align: left;
+        padding: 1.25em;
+        text-decoration: none;
+        transition: border .3s, box-shadow .3s;
+      }
+
+      .card:hover {
+        border: 1px solid #bbb;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .card--muted {
+        background: #FFF6DA;
+        border: 0;
+        box-shadow: none;
+        color: #333;
+      }
+
+      .card--muted:hover {
+        border: 0;
+        box-shadow: none;
+      }
+
+      .card__icon {
+        font-size: 1.75em;
+        flex: 0 0 auto;
+      }
+
+      @media (min-width: 38.4em) {
+        .card__icon {
+          font-size: 2.5em;
+        }
+      }
+
+      .card__title {
+        margin-bottom: .15rem;
+      }
+
+      .card__content {
+        flex: 1 1 auto;
+        margin-left: 1em;
+      }
+
+      .card__text {
+        margin: 0;
+      }
+
+      .card__meta {
+        display: flex;
+        color: #828282;
+        font-size: .75em;
+      }
+
+      .card__meta-location {
+        margin-left: auto;
+      }
+
+      .footer {
+        font-size: .75em;
+        color: #828282;
+        margin: 5em 0 2em;
+        padding: 0 .75em;
+      }
+
+      .footer__list {
+        margin: 0 -1em;
+      }
+
+      .footer__list li {
+        display: inline-block;
+        padding: 0 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a href="/"><span role="img">📒</span> &nbsp;etch.directory</a>
+      </div>
+      <nav class="header__nav">
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="intro">
+        <h1 class="intro__title">
+          Which <span class="highlight">Etch</span> are you looking for?
+        </h1>
+        <p class="intro__content">
+          The internet is full of companies called &ldquo;Etch&rdquo; so <a href="https://etch.co/" target="_blank" rel="noopener noreferrer">we</a> made this handy list.
+        </p>
+      </section>
+      <section>
+        <a class="card" href="https://etch.co" target="_blank" rel="noopener noreferrer">
+          <div class="card__icon">
+            <span role="img">💻</span>
+          </div>
+          <div class="card__content">
+            <h2 class="card__title">
+              The one that <b>makes</b> better <b>software</b>
+            </h2>
+            <div class="card__meta">
+              <div class="card__meta-domain">etch.co</div>
+              <div class="card__meta-location">Canterbury, UK</div>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="https://etch.restaurant" target="_blank" rel="noopener noreferrer">
+          <div class="card__icon">
+            <span role="img">🍳</span>
+          </div>
+          <div class="card__content">
+            <h2 class="card__title">
+              The <b>restaurant</b> owned by the bloke off <b>Masterchef</b>
+            </h2>
+            <div class="card__meta">
+              <div class="card__meta-domain">etch.restaurant</div>
+              <div class="card__meta-location">Brighton, UK</div>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="https://etch.com" target="_blank" rel="noopener noreferrer">
+          <div class="card__icon">
+            <span role="img">🚌</span>
+          </div>
+          <div class="card__content">
+            <h2 class="card__title">
+              The <b>children&apos;s school</b> in East Tennessee
+            </h2>
+            <div class="card__meta">
+              <div class="card__meta-domain">etch.com</div>
+              <div class="card__meta-location">Tennessee, USA</div>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="https://etch.work" target="_blank" rel="noopener noreferrer">
+          <div class="card__icon">
+            <span role="img">💵</span>
+          </div>
+          <div class="card__content">
+            <h2 class="card__title">
+              The fintech <b>startup</b> trying to disrupt <b>payroll</b>
+            </h2>
+            <div class="card__meta">
+              <div class="card__meta-domain">etch.work</div>
+              <div class="card__meta-location">London, UK</div>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="https://etchuk.com" target="_blank" rel="noopener noreferrer">
+          <div class="card__icon">
+            <span role="img">🕴</span>
+          </div>
+          <div class="card__content">
+            <h2 class="card__title">
+              The <b>digital agency</b> in Southampton
+            </h2>
+            <div class="card__meta">
+              <div class="card__meta-domain">etchuk.com</div>
+              <div class="card__meta-location">Southampton, UK</div>
+            </div>
+          </div>
+        </a>
+        <div class="card card--muted">
+          <div class="card__icon">
+            <span role="img">🤦</span>
+          </div>
+          <div class="card__content">
+            <h2 class="card__title">
+              Have we <b>missed</b> one?
+            </h2>
+            <p class="card__text">
+              <a href="mailto:support@etch.co">Let us know</a> and we’ll add it to this list.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__list">
+        <li><span role="img">🍪</span> &nbsp;No cookies</li>
+        <li><span role="img">👀</span> &nbsp;No tracking</li>
+        <li><span role="img">😎</span> &nbsp;No worries</li>
+      </ul>
+    </footer>
+  </body>
+</html>

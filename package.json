@@ -1,0 +1,17 @@
+{
+  "name": "etch-directory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Etch (https://etch.co)",
+  "license": "MIT",
+  "scripts": {
+    "start": "watch 'fkill -s :3000 && serve -l 3000' ./"
+  },
+  "devDependencies": {
+    "fkill-cli": "6.0.1",
+    "serve": "11.3.2",
+    "watch": "1.0.2"
+  }
+}
