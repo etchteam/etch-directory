@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Etch directory | About</title>
+    <title>Etch Directory | About</title>
     <meta name="description" content="The internet is full of companies called “Etch” so we made this handy list.">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -52,6 +52,7 @@
         font-size: 16px;
         text-align: center;
         font-family: NunitoSans, 'Open Sans', 'Helvetica Neue', sans-serif;
+        max-width: 100vw;
       }
 
       @media (min-width: 38.4em) {
@@ -62,6 +63,14 @@
 
       a {
         color: inherit;
+        transition: background .3s;
+      }
+
+      a:hover,
+      a:focus,
+      a:active {
+        outline: 0;
+        background: rgb(242, 201, 76, .5);
       }
 
       a .emoji {
@@ -78,6 +87,7 @@
         font-weight: 900;
         font-size: 2em;
         margin: 0;
+        line-height: 1;
       }
 
       ul {
@@ -95,6 +105,8 @@
       }
 
       .header {
+        position: sticky;
+        top: 0;
         display: flex;
         padding: 1em .75em;
       }
@@ -102,6 +114,7 @@
       .header__logo a {
         font-weight: 900;
         text-decoration: none;
+        line-height: 1;
       }
 
       .header__nav {
@@ -110,8 +123,9 @@
 
       .wrap {
         padding: 0 .75em;
-        max-width: 750px;
+        max-width: 525px;
         margin: 2em auto;
+        min-height: calc(100vh - 13em);
       }
 
       p {

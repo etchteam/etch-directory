@@ -1,4 +1,4 @@
-const cacheName = 'etch-directory-v1';
+const cacheName = 'etch-directory-v2';
 const thingsToCache = [
   '/',
   '/about'
@@ -10,9 +10,13 @@ const cacheResources = async () => {
 };
 
 const getResponse = async request => {
-  const cache = await caches.open(cacheName);
-  const cachedResponse = await cache.match(request);
-  return cachedResponse || fetch(request);
+  try {
+    return fetch(request)
+  } catch (err) {
+    const cache = await caches.open(cacheName);
+    const cachedResponse = await cache.match(request);
+    return cachedResponse;
+  }
 };
 
 self.addEventListener('install', event => {

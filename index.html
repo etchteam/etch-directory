@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Etch directory</title>
+    <title>Etch Directory</title>
     <meta name="description" content="The internet is full of companies called “Etch” so we made this handy list.">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -52,6 +52,7 @@
         font-size: 16px;
         text-align: center;
         font-family: NunitoSans, 'Open Sans', 'Helvetica Neue', sans-serif;
+        max-width: 100vw;
       }
 
       @media (min-width: 38.4em) {
@@ -62,6 +63,14 @@
 
       a {
         color: inherit;
+        transition: background .3s;
+      }
+
+      a:hover,
+      a:focus,
+      a:active {
+        outline: 0;
+        background: rgb(242, 201, 76, .5);
       }
 
       a .emoji {
@@ -81,6 +90,7 @@
       h1 {
         font-weight: 900;
         font-size: 2em;
+        line-height: 1;
       }
 
       h2 {
@@ -103,13 +113,18 @@
       }
 
       .header {
+        background: #fff;
+        position: sticky;
+        top: 0;
         display: flex;
         padding: 1em .75em;
+        z-index: 1;
       }
 
       .header__logo a {
         font-weight: 900;
         text-decoration: none;
+        line-height: 1;
       }
 
       .header__nav {
@@ -120,6 +135,7 @@
         padding: 0 .75em;
         max-width: 750px;
         margin: 2em auto;
+        min-height: calc(100vh - 13em);
       }
 
       @keyframes highlightFromLeft {
@@ -144,8 +160,9 @@
         position: absolute;
         left: 0;
         transform: rotate(-3deg);
-        top: 86%;
+        top: 95%;
         width: 0;
+        z-index: -1;
       }
 
       .intro__content {
@@ -165,8 +182,15 @@
         transition: border .3s, box-shadow .3s;
       }
 
-      .card:hover {
+      .card:hover,
+      .card:focus,
+      .card:active {
         border: 1px solid #bbb;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+        background: #fff;
+      }
+
+      .card:active {
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       }
 
@@ -178,6 +202,7 @@
       }
 
       .card--muted:hover {
+        background: #FFF6DA;
         border: 0;
         box-shadow: none;
       }
@@ -336,14 +361,14 @@
           <li>
             <div class="card card--muted">
               <div class="card__icon">
-                <span role="img" class="emoji">🤦</span>
+                <span role="img" class="emoji">🤷‍♀️</span>
               </div>
               <div class="card__content">
                 <h2 class="card__title">
                   Have we <b>missed</b> one?
                 </h2>
                 <p class="card__text">
-                  <a href="mailto:support@etch.co">Let us know</a> and we’ll add it to this list.
+                  <a href="mailto:directory@etch.co">Let us know</a> and we’ll add it to this list.
                 </p>
               </div>
             </div>
