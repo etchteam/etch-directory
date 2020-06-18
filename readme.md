@@ -1,4 +1,6 @@
 <h1 align="center">
+  <br/>
+  <br/>
 	<strong>📒 etch.directory</strong>
   <br/>
   <br/>
