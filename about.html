@@ -18,7 +18,6 @@
         font-family: 'NunitoSans';
         font-style: normal;
         font-weight: 400;
-        font-display: swap;
         src: local('NunitoSans'), local('NunitoSans-Regular'),
             url('fonts/nunitosans-regular.woff2') format('woff2'),
             url('fonts/nunitosans-regular.woff') format('woff');
@@ -28,7 +27,6 @@
         font-family: 'NunitoSans';
         font-style: normal;
         font-weight: 700;
-        font-display: swap;
         src: local('NunitoSans Bold'), local('NunitoSans-Bold'),
             url('fonts/nunitosans-bold.woff2') format('woff2'),
             url('fonts/nunitosans-bold.woff') format('woff');
@@ -38,7 +36,6 @@
         font-family: 'NunitoSans';
         font-style: normal;
         font-weight: 900;
-        font-display: swap;
         src: local('NunitoSans Black'), local('NunitoSans-Black'),
             url('fonts/nunitosans-black.woff2') format('woff2'),
             url('fonts/nunitosans-black.woff') format('woff');
@@ -62,6 +59,20 @@
         color: inherit;
       }
 
+      a {
+        color: inherit;
+      }
+
+      a .emoji {
+        transition: transform .3s;
+        transform: scale(1);
+        transform-origin: left center;
+      }
+
+      a:hover .emoji {
+        transform: scale(1.1);
+      }
+
       h1 {
         font-weight: 900;
         font-size: 2em;
@@ -78,9 +89,13 @@
         margin-bottom: 2em;
       }
 
+      .emoji {
+        display: inline-block;
+      }
+
       .header {
         display: flex;
-        padding: 1em;
+        padding: 1em .75em;
       }
 
       .header__logo a {
@@ -123,7 +138,7 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <a href="/"><span role="img">📒</span> &nbsp;etch.directory</a>
+        <a href="/"><span role="img" class="emoji">📒</span> &nbsp;etch.directory</a>
       </div>
       <nav class="header__nav">
         <a href="/about.html">About</a>
