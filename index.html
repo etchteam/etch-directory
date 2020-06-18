@@ -135,7 +135,7 @@
       }
 
       .highlight::after {
-        animation: .75s ease-out .75s 1 forwards highlightFromLeft;
+        animation: .5s ease-out .75s 1 forwards highlightFromLeft;
         background: rgb(242, 201, 76, .75);
         content: '';
         height: .3em;
@@ -356,5 +356,11 @@
         <li><span role="img">😎</span> &nbsp;No worries</li>
       </ul>
     </footer>
+
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js');
+      };
+    </script>
   </body>
 </html>

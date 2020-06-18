@@ -1,6 +1,7 @@
 {
     "name": "Etch directory",
     "short_name": "Etch directory",
+    "start_url": "/",
     "icons": [
         {
             "src": "/images/android-chrome-96x96.png",
