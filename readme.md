@@ -1,11 +1,10 @@
 <h1 align="center">
-	<strong>📒 etch.directory</strong><br/>
-  <small>
-    The internet is full of companies called “Etch” so [we](https://etch.co) made this handy list.
-  </small>
+	<strong>📒 etch.directory</strong>
   <br/>
   <br/>
 </h1>
+
+The internet is full of companies called “Etch” so [we](https://etch.co) made this handy list.
 
 ## Running locally
 
