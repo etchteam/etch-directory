@@ -117,7 +117,19 @@
       }
 
       .highlight {
-        border-bottom: 10px solid rgb(242, 201, 76, .75);
+        display: inline-block;
+        position: relative;
+      }
+
+      .highlight::after {
+        background: rgb(242, 201, 76, .75);
+        content: '';
+        height: .3em;
+        position: absolute;
+        left: 0;
+        transform: rotate(-3deg);
+        top: 86%;
+        width: 100%;
       }
 
       .intro__content {
