@@ -10,8 +10,8 @@
     "start": "watch 'fkill -s :3000 && serve -l 3000' ./"
   },
   "devDependencies": {
-    "fkill-cli": "6.0.1",
-    "serve": "11.3.2",
+    "fkill-cli": "9.0.0",
+    "serve": "14.2.5",
     "watch": "1.0.2"
   }
 }
