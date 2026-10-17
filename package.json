@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "fkill-cli": "9.0.0",
-    "serve": "14.2.5",
+    "serve": "14.2.6",
     "watch": "1.0.2"
   }
 }
